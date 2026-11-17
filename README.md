@@ -4,9 +4,16 @@ Headless Blender (Python `bpy`) tool that batch-converts messy CAD/scan-style
 3D exports into clean, LOD'd, engine-ready files for Unity and Unreal, with a
 report for every asset.
 
+**[Live LOD viewer](https://praneethj39.github.io/blender-asset-optimizer/)**: orbit the optimized cars in the browser, switch LODs, toggle wireframe, and spin the wheels on their centred pivots.
+
 ```
 dirty .fbx/.obj/.glb  ->  cleanup  ->  part classification + naming  ->  LODs  ->  validate  ->  .fbx + .glb + report
 ```
+
+![Original vs optimized](docs/before_after.png)
+*Same camera, back-face culling on. The speckled holes in the original are flipped faces, which a game engine would not draw.*
+
+![LOD chain](docs/lods.png)
 
 ## What it fixes
 
@@ -38,7 +45,7 @@ These are synthetic assets, not real customer CAD. Real data will need tuning of
 ## Usage
 
 ```bash
-pip install bpy==5.3.0 numpy scikit-learn joblib   # bpy = Blender as a Python module (Python 3.13)
+pip install bpy==5.3.0 numpy scikit-learn joblib pytest pillow   # bpy = Blender as a Python module (Python 3.13)
 python tools/make_test_assets.py --out samples --count 3
 python -m optimizer.run --in samples --out build --formats fbx,glb \
        --lods 1.0,0.5,0.2 --tri-budget 8000 \
@@ -51,11 +58,25 @@ python -m pytest -q
 * `unity/Editor/AutoLODImporter.cs`: any model dropped in an `Optimized/` folder is imported with metre scale, lightmap UVs, mesh compression and tuned LOD switch heights.
 * `unity/Runtime/WheelSpinner.cs`: spins every `_Wheel_` part around its own pivot. This works without manual setup because the optimizer centred the pivots and the classifier named the wheels.
 
+## Live viewer
+
+`docs/index.html` is a small three.js page, served by GitHub Pages from `/docs`:
+* Each `_LOD0.._LODn` group becomes a `THREE.LOD`, so LODs switch with camera distance the same way Unity's LODGroup does.
+* Parts are coloured by the label the classifier predicted.
+* Wheels spin around their own axle, which is found as the part's thinnest axis.
+
+three.js is bundled under `docs/viewer/vendor`, so the page needs no CDN. To run it locally: `cd docs && python -m http.server`, then open http://localhost:8000.
+
+To regenerate the images: `python tools/render_previews.py --src samples/car_00.fbx --opt build/car_00.fbx --out docs`
+
+![Viewer](docs/viewer.png)
+
 ## Layout
 
 ```
 optimizer/  cleanup.py  lod.py  naming.py  stats.py  run.py
-tools/      make_test_assets.py
+tools/      make_test_assets.py  render_previews.py
+docs/       index.html (live viewer), README images
 unity/      Editor/AutoLODImporter.cs  Runtime/WheelSpinner.cs
 tests/      test_pipeline.py
 ```

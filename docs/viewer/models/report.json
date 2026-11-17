@@ -1,0 +1,398 @@
+[
+  {
+    "asset": "car_00.fbx",
+    "fixes": {
+      "empties_removed": 3,
+      "loose_verts_removed": 134,
+      "duplicate_verts_merged": 63980,
+      "degenerate_faces_removed": 0,
+      "faces_flipped": 2817,
+      "transforms_applied": 8,
+      "uvs_added": 8,
+      "tris_removed_planar": 30446
+    },
+    "parts": [
+      {
+        "source_name": "Mesh.021",
+        "name": "SM_Car00_Body_01",
+        "label": "body",
+        "verts_before": 23082,
+        "tris_before": 11532,
+        "verts_after": 993,
+        "lod_tris": [
+          1982,
+          990,
+          396
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.022",
+        "name": "SM_Car00_Wheel_RR_01",
+        "label": "wheel",
+        "verts_before": 6166,
+        "tris_before": 5628,
+        "verts_after": 512,
+        "lod_tris": [
+          1020,
+          510,
+          204
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.023",
+        "name": "SM_Car00_Wheel_RL_01",
+        "label": "wheel",
+        "verts_before": 4633,
+        "tris_before": 4220,
+        "verts_after": 384,
+        "lod_tris": [
+          764,
+          382,
+          152
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.024",
+        "name": "SM_Car00_Wheel_FR_01",
+        "label": "wheel",
+        "verts_before": 4621,
+        "tris_before": 4220,
+        "verts_after": 384,
+        "lod_tris": [
+          764,
+          382,
+          152
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.025",
+        "name": "SM_Car00_Wheel_FL_01",
+        "label": "wheel",
+        "verts_before": 4616,
+        "tris_before": 4220,
+        "verts_after": 387,
+        "lod_tris": [
+          770,
+          384,
+          154
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.026",
+        "name": "SM_Car00_Glass_F_01",
+        "label": "glass",
+        "verts_before": 11400,
+        "tris_before": 5688,
+        "verts_after": 4,
+        "lod_tris": [
+          2,
+          2,
+          2
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.027",
+        "name": "SM_Car00_Mirror_FR_01",
+        "label": "mirror",
+        "verts_before": 18248,
+        "tris_before": 9024,
+        "verts_after": 4002,
+        "lod_tris": [
+          8000,
+          4000,
+          1600
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.028",
+        "name": "SM_Car00_Mirror_FL_01",
+        "label": "mirror",
+        "verts_before": 18256,
+        "tris_before": 9024,
+        "verts_after": 4002,
+        "lod_tris": [
+          8000,
+          4000,
+          1600
+        ],
+        "issues": []
+      }
+    ],
+    "outputs": [
+      "car_00.fbx",
+      "car_00.glb"
+    ],
+    "seconds": 3.87
+  },
+  {
+    "asset": "car_01.fbx",
+    "fixes": {
+      "empties_removed": 3,
+      "loose_verts_removed": 140,
+      "duplicate_verts_merged": 63041,
+      "degenerate_faces_removed": 0,
+      "faces_flipped": 4311,
+      "transforms_applied": 8,
+      "uvs_added": 8,
+      "tris_removed_planar": 31414
+    },
+    "parts": [
+      {
+        "source_name": "Mesh.023",
+        "name": "SM_Car01_Body_01",
+        "label": "body",
+        "verts_before": 21614,
+        "tris_before": 10800,
+        "verts_after": 785,
+        "lod_tris": [
+          1566,
+          782,
+          312
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.024",
+        "name": "SM_Car01_Wheel_RR_01",
+        "label": "wheel",
+        "verts_before": 6168,
+        "tris_before": 5628,
+        "verts_after": 512,
+        "lod_tris": [
+          1020,
+          510,
+          204
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.025",
+        "name": "SM_Car01_Wheel_RL_01",
+        "label": "wheel",
+        "verts_before": 4624,
+        "tris_before": 4220,
+        "verts_after": 384,
+        "lod_tris": [
+          764,
+          382,
+          152
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.026",
+        "name": "SM_Car01_Wheel_FR_01",
+        "label": "wheel",
+        "verts_before": 6162,
+        "tris_before": 5628,
+        "verts_after": 512,
+        "lod_tris": [
+          1020,
+          510,
+          204
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.027",
+        "name": "SM_Car01_Wheel_FL_01",
+        "label": "wheel",
+        "verts_before": 6172,
+        "tris_before": 5628,
+        "verts_after": 512,
+        "lod_tris": [
+          1020,
+          510,
+          204
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.028",
+        "name": "SM_Car01_Glass_F_01",
+        "label": "glass",
+        "verts_before": 9370,
+        "tris_before": 4680,
+        "verts_after": 4,
+        "lod_tris": [
+          2,
+          2,
+          2
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.029",
+        "name": "SM_Car01_Mirror_FR_01",
+        "label": "mirror",
+        "verts_before": 18260,
+        "tris_before": 9024,
+        "verts_after": 4002,
+        "lod_tris": [
+          8000,
+          4000,
+          1600
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.030",
+        "name": "SM_Car01_Mirror_FL_01",
+        "label": "mirror",
+        "verts_before": 18250,
+        "tris_before": 9024,
+        "verts_after": 4002,
+        "lod_tris": [
+          8000,
+          4000,
+          1600
+        ],
+        "issues": []
+      }
+    ],
+    "outputs": [
+      "car_01.fbx",
+      "car_01.glb"
+    ],
+    "seconds": 1.21
+  },
+  {
+    "asset": "car_02.fbx",
+    "fixes": {
+      "empties_removed": 3,
+      "loose_verts_removed": 136,
+      "duplicate_verts_merged": 60232,
+      "degenerate_faces_removed": 0,
+      "faces_flipped": 2615,
+      "transforms_applied": 8,
+      "uvs_added": 8,
+      "tris_removed_planar": 29186
+    },
+    "parts": [
+      {
+        "source_name": "Mesh.035",
+        "name": "SM_Car02_Body_01",
+        "label": "body",
+        "verts_before": 20203,
+        "tris_before": 10092,
+        "verts_after": 356,
+        "lod_tris": [
+          708,
+          354,
+          140
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.036",
+        "name": "SM_Car02_Wheel_RR_01",
+        "label": "wheel",
+        "verts_before": 4614,
+        "tris_before": 4220,
+        "verts_after": 384,
+        "lod_tris": [
+          764,
+          382,
+          152
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.037",
+        "name": "SM_Car02_Wheel_RL_01",
+        "label": "wheel",
+        "verts_before": 4618,
+        "tris_before": 4220,
+        "verts_after": 384,
+        "lod_tris": [
+          764,
+          382,
+          152
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.038",
+        "name": "SM_Car02_Wheel_FR_01",
+        "label": "wheel",
+        "verts_before": 4627,
+        "tris_before": 4220,
+        "verts_after": 384,
+        "lod_tris": [
+          764,
+          382,
+          152
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.039",
+        "name": "SM_Car02_Wheel_FL_01",
+        "label": "wheel",
+        "verts_before": 6170,
+        "tris_before": 5628,
+        "verts_after": 512,
+        "lod_tris": [
+          1020,
+          510,
+          204
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.040",
+        "name": "SM_Car02_Glass_F_01",
+        "label": "glass",
+        "verts_before": 9253,
+        "tris_before": 4620,
+        "verts_after": 4,
+        "lod_tris": [
+          2,
+          2,
+          2
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.041",
+        "name": "SM_Car02_Mirror_FR_01",
+        "label": "mirror",
+        "verts_before": 18263,
+        "tris_before": 9024,
+        "verts_after": 4002,
+        "lod_tris": [
+          8000,
+          4000,
+          1600
+        ],
+        "issues": []
+      },
+      {
+        "source_name": "Mesh.042",
+        "name": "SM_Car02_Mirror_FL_01",
+        "label": "mirror",
+        "verts_before": 18260,
+        "tris_before": 9024,
+        "verts_after": 4002,
+        "lod_tris": [
+          8000,
+          4000,
+          1600
+        ],
+        "issues": []
+      }
+    ],
+    "outputs": [
+      "car_02.fbx",
+      "car_02.glb"
+    ],
+    "seconds": 1.2
+  }
+]
